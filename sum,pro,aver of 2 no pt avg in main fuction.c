@@ -5,15 +5,16 @@ void dowork(int a, int b, int *sum, int *prod, int *avg);
 int main() 
 {
     int a = 3, b = 5;
-    int sum, prob, avg;
-    dowork(a, b, &sum, &prob, &avg);
-    
-    printf("sum = %d, prob = %d, avg = d", sum, prob, avg);
+    int sum, prod, avg;  // Corrected variable name from prob to prod
+    dowork(a, b, &sum, &prod, &avg);
+
+    printf("sum = %d, prod = %d, avg = %d\n", sum, prod, avg);  // Corrected printf statement
     return 0;
 }
- void dowork(int a, int b, int *sum, int *prod, int *avg)
- {
-    *sum = a+b;
-    *prod = a*b;
-    *avg = (a+b)/2;
- }
+
+void dowork(int a, int b, int *sum, int *prod, int *avg)
+{
+    *sum = a + b;
+    *prod = a * b;
+    *avg = (a + b) / 2;
+}

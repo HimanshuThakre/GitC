@@ -10,5 +10,5 @@ int main(){
 }
 
 void printaddress(int *n){  // Corrected function name
-    printf("address of n is : %u\n", n);
+    printf("address of n is : %u\n",n);
 }
