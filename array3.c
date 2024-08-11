@@ -6,7 +6,7 @@ printNumbers (arr, 6);
 return 0;
 }
 void printNumbers (int arr[], int n) {
-for(int i=0; i<n; i++) {
+for(int i=0; i<n; i++) { 
 printf("%d \t", arr[i]);
 }
 printf("\n");
